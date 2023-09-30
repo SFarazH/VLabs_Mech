@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ APP</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <form action="/" method="GET"></form>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start Activity</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Activity</span></div>
+        <div class="info-list">
+            <div class="info">1. This Activity contains <span>4</span> Questions</div>
+            <div class="info">2. Each Question has <span>3</span> Attempts </div>
+            <div class="info">3. <span>1</span> mark shall be deducted for each attempt .</div>
+            <div class="info">4. You can't exit from the Activity after it is started.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+
+
+    <!-- VIdeo div -->
+    <div class="vid_box">
+        <div class="vid-title">Video</div>
+        <iframe src="https://www.youtube.com/embed/k4V3Mo61fJM?si=wi91o8UU-LleEvNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><div class="buttons">
+            <button class="vid_continue">Continue</button>
+        </div>
+    </div>
+
+
+    <div class="para_box">
+        <div class="ins-title">Theory</div>
+        <div class="theoryTxt">
+            This quiz is ony for Mechanical students of RCOEM.
+        </div>
+        <div class="buttons">
+            <button class="para_continue">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Design of Sleeve Coupling </div>
+            <!-- <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">30</div>
+            </div> -->
+            <div class="time_line"></div>
+        </header>
+        <section id = 'queA'>
+            <div class="queA_text" id = "queA_text1">
+                
+            
+            <div class="option_list">
+            
+            </div>
+            </div>
+        </section>
+        
+        
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="check">check</button>
+            <button class="Try_again">Try again</button>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+        
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/questions_A.js"></script>
+    <script src="js/questions_B.js"></script>
+    <script src="js/questions_C.js"></script>
+    <script src="js/questions_D.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js"></script>
+    <script src="js/script.js"></script>
+    
+</form>
+</body>
+</html>
